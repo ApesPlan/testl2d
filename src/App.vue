@@ -6,6 +6,7 @@ import { Live2DModel } from "pixi-live2d-display";
 const pixiLive2dDisplayRef = ref();
 const dir = "assets/l2d/";
 const w = window as any;
+w.PIXI = PIXI;
 
 onMounted(() => {
   init();
